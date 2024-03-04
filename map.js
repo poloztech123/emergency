@@ -34,7 +34,8 @@
 
  function callAmbulance() {
     const ambulanceNumber = "118"; // 
-    window.location.href = `118:${ambulanceNumber}`;
+    window.location.href = `tel:${ambulanceNumber}`;
+
   }
   /*
   Explanation:

@@ -4,6 +4,7 @@ body {
   text-align: center;
   align-items: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
