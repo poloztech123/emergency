@@ -32,11 +32,16 @@
    // Handle location errors (e.g., permission denied)
  }
 
- function callAmbulance() {
-    const ambulanceNumber = "118"; // 
-    window.location.href = `tel:${ambulanceNumber}`;
+ document.getElementById('emergencyDial').addEventListener('click', function(event){
+  event.preventDefault();
+  window.location.href = this.href;
+ });
 
-  }
+  const data = [1,2,3,4,5];
+  const result = data.reduce((acc, val) => acc.concat(Array.from({length:
+    val 
+  }, (_, index) => val + index
+  )),[]);
   /*
   Explanation:
 
