@@ -45,12 +45,9 @@
   /*
   Explanation:
 
-    This code defines a button with an onclick event listener attached to the callAmbulance function.
-    The callAmbulance function:
-        Stores the ambulance number in a variable (replace with your local emergency number).
-        Uses window.location.href to redirect the browser to the tel: URL scheme, which is typically used to open the phone app pre-filled with the provided number.
+    
+    The href attribute in the <a> tag uses the tel: protocol followed by the emergency number prefixed with the country code. For the United States, the country code is +1, and the emergency number is 911.
+    The JavaScript code listens for a click event on the link with the ID emergencyDial. When the link is clicked, it prevents the default action (which would be to navigate to the tel: URL) and instead programmatically navigates to the tel: URL, which triggers the dialing action.
 
-Important Note:
-
-    This approach relies on the user's device having a phone app and supporting the tel: URL scheme.
-    Always include a clear disclaimer stating that the website doesn't directly call emergency services and users should contact them immediately if needed.*/
+This approach allows you to embed an emergency dialing functionality directly into your web pages, making it easy for users to dial emergency services with a single click. Remember to test the functionality on different
+ devices and browsers to ensure compatibility, as behavior can vary.*/
